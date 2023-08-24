@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .form-control{
+            width: 100%;   
+            padding: 10px;
+            border: 1px solid black;
+            margin-top: 5px;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 5px;
+            background-color: brown;
+            color: white;
+            width: 120px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .btn:hover{
+            background-color: white;
+            color: brown;
+            border: 1px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <form action="registerprocess.jsp" method="post">
+        <input type="text" name="prefix" required placeholder="Enter Prefix" class="form-control">
+        <input type="text" name="firstname" required placeholder="Enter First Name" class="form-control">
+        <input type="text" name="lastname" required placeholder="Enter Last Name" class="form-control">
+        <input type="email" name="email" required placeholder="Enter Email Addres" class="form-control">
+        <input type="text" name="prefix" required placeholder="Enter Phone Number" class="form-control" pattern="[0-9]\{10,15}">
+        <input type="text" name="password" required placeholder="Enter Password" class="form-control">
+        <input type="text" name="cpassword" required placeholder="Enter Confirm Password" class="form-control">
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <textarea placeholder="Enter Address" class="form-control"  style="resize: none;" name="address"></textarea>
+        <select class="form-control" name="city">
+            <option>Rajkot</option>
+            <option>Surat</option>
+            <option>Baroda</option>
+            <option>Bhuj</option>
+            <option>Ahemdabad</option>
+        </select>
+        <input type="submit" value="Register" class="btn">
+        <input type="reset" value="Reset" class="btn">
+    </form>
+</body>
+</html>
