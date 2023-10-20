@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>NewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>example1</servlet-name>
+        <servlet-class>demo</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>example1</servlet-name>
+        <url-pattern>/avpti</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>example2</servlet-name>
+        <servlet-class>demo1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>example2</servlet-name>
+        <url-pattern>/ajp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>example3</servlet-name>
+        <servlet-class>demo2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>example3</servlet-name>
+        <url-pattern>/ajp1</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>example4</servlet-name>
+        <servlet-class>demo3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>example4</servlet-name>
+        <url-pattern>/ajp2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>example5</servlet-name>
+        <servlet-class>demo4</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>example5</servlet-name>
+        <url-pattern>/message</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>demo11</servlet-name>
+        <servlet-class>demo5</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>demo11</servlet-name>
+        <url-pattern>/process1</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+        <username>
+            Harmeet Purohit
+        </username>
+    </session-config>
+</web-app>
